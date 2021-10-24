@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pathfinding Visualizer</title>
+
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <meta name="description"
+        content="This is a website about visualizing the process of finding the shortest path between two point with pathfinding algorithms. You can try adding some effect by generating mazes with the algorithm in place.">
+    <meta name="keywords"
+        content="Pathfinding, Pathfinding Visualizer, Algorithm, Breadth-first Search, Depth-first Search, Dijkstra, Greddy Breadth-first Search, A*, A star">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+    <div id="topNav">
+        <div id="gridsCheckBox"></div>
+        <div style="max-width: 100%;">
+            <div id="globalActions">
+            </div>
+            <div id="globalSliders">
+            </div>
+        </div>
+    </div>
+
+    <div id="rBody">
+
+        <div id="gridsDiv">
+            <div style="width:100%;" id="grid1" class="grid" data-x=75 data-y=29></div>
+        </div>
+
+    </div>
+    <button id="infoBut">i</button>
+    <div id="information-container">
+        <div id="information">
+            <section>
+                <h4>TUTORIAL</h4>
+                <p>Drag and drop the START and END nodes wherever you want and place walls by pressing the left button
+                    of your mouse.
+                    You can place weighted nodes by pressing the "W" key of your keyboard while pressing the left button
+                    of your mouse.
+                    Select the path finding algorithm that you want to use and click on his name to start the algorithm.
+                    You can also generate a maze with the different algorithms in place.
+                </p>
+            </section>
+            <section>
+                <h4>LEGEND</h4>
+                <div id="legendContainer">
+                    <div class="legends">
+                        <div class="node-start" style="width: 20px;height: 20px;margin-right: 10px;"></div> START
+                    </div>
+                    <div class="legends">
+                        <div class="node-end" style="width: 20px;height: 20px;margin-right: 10px;"></div> END
+                    </div>
+                    <div class="legends">
+                        <div class="node-wall" style="width: 20px;height: 20px;margin-right: 10px;"></div> WALL
+                    </div>
+                    <div class="legends">
+                        <div class="node-normal-weighted" style="width: 20px;height: 20px;margin-right: 10px;"></div>
+                        WEIGHTED
+                    </div>
+                    <div class="legends">
+                        <div class="node-visited" style="width: 20px;height: 20px;margin-right: 10px;"></div> VISITED
+                    </div>
+                    <div class="legends">
+                        <div class="node-bestPath" style="width: 20px;height: 20px;margin-right: 10px;"></div> BEST PATH
+                    </div>
+                </div>
+            </section>
+            <section style="display: flex;flex-direction: column;">
+                <h4>ALGORITHMS</h4>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Weighted</th>
+                        <th>Guarantee the shortest path</th>
+                    </tr>
+                    <tr>
+                        <td>Breadth-first Search</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Depth-first Search</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td>Dijkstra</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Greddy Breadth-first Search</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td>A* (A star)</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Swarm</td>
+                        <td>✔️</td>
+                        <td>❌</td>
+                    </tr>
+                </table>
+            </section>
+            <section><a href="https://github.com/kaidalisohaib/Pathfinding-Visualizer" target="_blank"><img
+                        src="./assets/icons-github.svg" alt=""></a></section>
+            <button id="infoClose">X</button>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- <script src="./js/utilities/utils.js"></script>
+    <script src="./js/algorithms/path_finders/BFS.js"></script>
+    <script src="./js/algorithms/path_finders/DFS.js"></script>
+    <script src="./js/algorithms/path_finders/Dijkstra.js"></script>
+    <script src="./js/algorithms/path_finders/GreedyBFS.js"></script>
+    <script src="./js/algorithms/path_finders/AStar.js"></script>
+    <script src="./js/algorithms/path_finders/Swarm.js"></script>
+    <script src="./js/algorithms/maze_generators/DFSmaze.js"></script>
+    <script src="./js/algorithms/maze_generators/Randomaze.js"></script>
+    <script src="./js/algorithms/maze_generators/Kruskals.js"></script>
+    <script src="./js/main.js"></script> -->
+    <script src="./js/main.min.js"></script>
+
+</body>
+
+</html>
