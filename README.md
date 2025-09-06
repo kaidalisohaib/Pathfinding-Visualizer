@@ -9,8 +9,8 @@ An interactive web application that visualizes classic pathfinding and maze gene
 
 ---
 
-![](./assets/pic1.png)
-![](./assets/pic2.gif)
+![](https://raw.githubusercontent.com/kaidalisohaib/Pathfinding-Visualizer/refs/heads/main/assets/pic1.png)
+![](https://raw.githubusercontent.com/kaidalisohaib/Pathfinding-Visualizer/refs/heads/main/assets/pic2.gif)
 
 - [Pathfinding Algorithm Visualizer](#pathfinding-algorithm-visualizer)
     - [▶️ Live Demo Here](#️-live-demo-here)
